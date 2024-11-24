@@ -1,42 +1,31 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*{
+    font-family: 'Exo 2', sans-serif !important;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+button:focus {
+    outline: none !important;
+    ;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+#payment-form {
+    border: #000000 solid 1px;
+    border-radius: var(--radius);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%),
+      0 30px 60px -30px rgb(0 0 0 / 30%);
   }
-  to {
-    transform: rotate(360deg);
+  
+  #messages {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+    display: none; /* hide initially, then show once the first message arrives */
+    background-color: #0a253c;
+    color: #00d924;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--radius);
+    font-size: 0.7em;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
